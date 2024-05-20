@@ -9,3 +9,8 @@
 - abstract classes may contain state (data members) and/or implementation (methods) - abstract classes can be inherited without implementing the abstract methods (though such a derived class is abstract itself) . Classes <b> extends</b> Abstract Classes.
 
 - interfaces may be multiple-inherited, abstract classes may not (this is probably the key concrete reason for interfaces to exist separately from abtract classes - they permit an implementation of multiple inheritance that removes many of the problems of general MI).
+
+### Java vs Python
+
+- Interfaces do not exist in Python, but we can simulate functionality of Interfaces by using Abstract Classes such that it contains only abstract Methods.
+
