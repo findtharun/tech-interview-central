@@ -4,3 +4,8 @@ A comprehensive resource repository covering essential concepts for technical in
 Complete Cheatsheet for Fundamentals : https://hlop3z.github.io/interviews-python/
 Python Cheatsheet : https://www.codecademy.com/resources/cheatsheets/language/python
 Java Cheatsheet : https://www.codecademy.com/resources/cheatsheets/language/java
+
+
+### Resources
+
+* Python OOPs : https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc

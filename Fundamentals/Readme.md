@@ -1,3 +1,16 @@
+## Variables
 
-- Methods vs Functions : Methods are Defined in Class , can only be accessed by Object. Functions are Independent  are written outside of classes.  More details can be found here : https://www.educative.io/answers/what-is-the-difference-between-a-method-and-a-function
+Local / Instance , Class, Static, Global
 
+## Java vs Python
+
+- Java does not have the concept of Global, closest one to that is static.
+- Static variables are private in general, can be accessed by all methods of class but not by other classes.
+- Static variables can be accessed by other classes. Public staic datatype is equivalent to Global in java.
+
+- Python do not have concept of static, class variables are equivalent to static variables.
+- Python supports global variables, it variable is global only within the module where it is defined. To access it across different modules, import the module containing the global variable.
+
+## Methods
+
+Java vs Python : https://python.pages.doc.ic.ac.uk/java/lessons/java/08-oop/11-static.html#:~:text=You%20might%20have%20used%20static,as%20in%20an%20instance%20method.
