@@ -29,6 +29,7 @@ Garbage Collection Can help solve issues of Memory Leaks and Dangling Pointers.
 Two Strategies to Implement Garbage Collection
 
 1. Reference Counter
+2. Mark and Sweep
 2. Generational Garbage Collection
 
 ### Reference Counting
@@ -46,9 +47,11 @@ print(x)
 
 <b> To Handle Cyclic References Generation Garbage Collection Strategy is helpful </b>
 
-### Algoritms for Memory Management
+### Mark and Sweep Algoritghm
 
-<b> Mark and Sweep </b> - Mark Memory blocks which can be ready for Freeing up and sweep using below Algorithms.
+<b> Mark and Sweep </b> - object is marked as reachable if it can be accessed directly or indirectly from the root references and unreachable are unmarked.
+unmarked objects are freed up.
+Mark and Sweep Algorithm will ensure cyclic references are cleaned up. (Root References here are stack, etc.)
 
 1. Normal Sweeping - After deleting Marked Memory , Heap will have Fragmented Space, which may lead to out of Memory for new objects if the size of new object is large.
 2. Sweeping with Compacting - After Deleting Memory, Fragmented memory is joined together allowing for more continuous Freed Memory.
@@ -61,6 +64,10 @@ Depending on our requirement we can use either sweep with Compacting / Copying.
 - Generation 0 identifies a newly created object that has never been marked for collection
 - Generation 1 identifies an object that has survived a GC (marked for collection but not removed because there was sufficient heap space)
 - Generation 2 identifies an object that has survived more than one sweep of the GC.
+
+```
+Modern Garbage Collectors use Generational and mark and sweep togther
+```
 
 ### Other Strategies
 

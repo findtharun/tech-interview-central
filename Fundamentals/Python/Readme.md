@@ -1,9 +1,20 @@
 ## Key Features of Python
 
-- Interpreted , Dynamically Typed
+- Dynamically Typed
 - Functions and Classes are First Class Objects
 - Python supports all OOPs features, including Composition
-- No access modifiers (private , public etc..)
+- No explicit access modifiers (private , public etc..), but we can restrict. By Default all are public
+  - _var (Protected) - Can be accessed by subclasses
+  - __var (Private) - can be accessed only by class
+- Interpreted (Compiled & Interpreted)
+
+When you run a Python program, the Python interpreter first compiles the source code into bytecode. Bytecode is a low-level representation of the Python program that is easier for the interpreter to execute. The interpreter then executes the bytecode line by line.
+
+It is compiled because the source code is converted into bytecode. It is interpreted because the bytecode is executed line by line.
+
+The compilation step in Python is mostly hidden from the user. You do not need to compile a Python program before you can run it. The interpreter will compile the program for you automatically when you run it.
+
+However, there are some cases where you may want to compile a Python program yourself. For example, you may want to compile a Python program into a standalone executable file.
 
 ## DataTypes
 
@@ -42,3 +53,7 @@ Local / Instance , Class, Global
 - Static Methods
   - These are methods that have a logical connection to the Class, but does not need a class or instance as an argument.
   - They do not directly access class/ Instance variables.
+
+```
+Arugments are passed by Reference (Object Reference)
+```
