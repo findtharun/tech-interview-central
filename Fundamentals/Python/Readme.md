@@ -1,3 +1,12 @@
+## Key Features of Python
+
+- Interpreted , Dynamically Typed
+- Functions and Classes are First Class Objects
+- Python supports all OOPs features, including Composition
+- No access modifiers (private , public etc..)
+
+## DataTypes
+
 - Immutable - Objects are of in-built datatypes like int, float, bool, string, Unicode, and tuple.
 - Mutable - Lists, Dictionaries and Sets
 - Zip function in Python is a built-in utility that allows you to combine multiple iterables (like lists, tuples, etc.) into a single iterator of tuples. Each tuple contains elements from the corresponding positions of the input iterables. It's often used for parallel iteration.
