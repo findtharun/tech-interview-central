@@ -18,3 +18,7 @@ class D(B,C)
 in this case Class D will pick functions from B , since it was first Interpreted.
 
 ```
+
+- For Decoupling Composition is preferred over Inheritance.
+
+- Best Video on Inheritance (IS A) and Composition (HAS A) : https://www.youtube.com/watch?v=0mcP8ZpUR38

@@ -57,3 +57,16 @@ Local / Instance , Class, Global
 ```
 Arugments are passed by Reference (Object Reference)
 ```
+
+## Iterators
+
+Iterator is an object that represents a stream of data. It implements the iterator protocol, which consists of two methods: __iter__() and __next__(). Iterators are used to iterate over elements in a sequence, such as lists, tuples, dictionaries, and more
+
+Built-in Iterators
+Python provides built-in functions and classes that return iterators or work with iterators:
+
+- iter(): Returns an iterator from an iterable object.
+- next(): Retrieves the next item from an iterator.
+- enumerate(): Returns an iterator of tuples containing indices and items from an iterable.
+- zip(): Returns an iterator that aggregates elements from multiple iterables.
+- map() and filter(): Return iterators that apply a function to each element in an iterable or filter elements based on a function, respectively.
