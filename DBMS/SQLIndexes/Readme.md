@@ -7,7 +7,8 @@ CREATE IX_TABLENAME_COLUMN on TableName (Column ASC) - This  is a generic format
 How Indexes Work : https://www.youtube.com/watch?v=lYh6LrSIDvY
 
 Types of Index
-1. Non Clustered
+
+1. Non Clustered (Mostly we create these explicity and used widely)
 2. Clustered
 3. Unique
 4. Filtered
@@ -19,15 +20,36 @@ Types of Index
 10. Index on Computed Colums
 
 How Ever, Clustered, Non Clustered and Unqiue are mostly used.
+
 ## Clustered and Non Clustered Index
-1. Non Clustered ( Similar to index Page on a Book)
+
+1. Non Clustered ( Similar to index Page on a Book), They
 2. Clustered ( Similar to Telephone Directory) and Primary Key Constraint creates Clustered index automatically if no clustered index already exists on the table.
+
+| **Feature**                      | **Clustered Index**                            | **Non-Clustered Index**                                                     |
+| -------------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------- |
+| **Data Storage**                 | Dictates physical order of data in the table   | Stores only pointers to the data, not the data itself                       |
+| **Number of Indexes**            | Only one clustered index per table             | Multiple non-clustered indexes per table                                    |
+| **Access**                       | Direct access to data                          | Requires an extra lookup to fetch the actual data                           |
+| **Speed**                        | Faster for range queries and sorting           | Faster for specific lookups or filters                                      |
+| **Impact on Data Modifications** | Slows down inserts/updates due to reordering   | Slows down inserts/updates due to index maintenance                         |
+| **Usage**                        | Columns frequently used in range-based queries | Columns frequently used in exact match lookups                              |
+| **Extra Sapce**                  | Not Required                                   | Additional Space is required as these are stored seperately from table data |
 
 ### Clustered
 
-A Clustered Index determines the physical order of data in a table. (Basically they sort the data). __A Table can only have one Clustered Index, However that Index can be a composite Index__. 
+A Clustered Index determines the physical order of data in a table. (Basically they sort the data). **A Table can only have one Clustered Index, However that Index can be a composite Index**.
 
 ```
 Composite Clustered Index
 CREATE CLUSTERED INDEX IX_TABLENAME_GENDER_SALARY on TABLENAME(GENDER DESC, SALARY ASC)
 ```
+
+### Non Clustered
+
+The data is stored in one place and the Index in another place. Index will have pointers to the storage location of the data.
+
+- Since the Non Clustered Index is stored seperately from the actual data, a table can have more than one Non Clustered Index.
+- In the Indexes they are organized in ASC / DESC order of the Index Key, which doesn't in any way influence the storage of data in the Table.
+
+![](assets/NonClusteredIndexRepresentation.png)
