@@ -9,7 +9,7 @@ It contains all concepts of OOPs and Difference between Various Properties of OO
 
 ### Principles of OOPs
 
-
+https://khalilstemmler.com/articles/object-oriented/programming/4-principles/
 
 
 ### Magic or Dunder Methods
