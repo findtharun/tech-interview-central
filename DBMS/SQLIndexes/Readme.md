@@ -22,8 +22,8 @@ Types of Index
 How Ever, Clustered, Non Clustered and Unqiue are mostly used.
 
 ## Clustered and Non Clustered Index
-
-1. Non Clustered ( Similar to index Page on a Book), They
+Best Explanation : https://www.youtube.com/watch?v=NGslt99VOCw (Kud Venkat YT)
+1. Non Clustered ( Similar to index Page on a Book),
 2. Clustered ( Similar to Telephone Directory) and Primary Key Constraint creates Clustered index automatically if no clustered index already exists on the table.
 
 | **Feature**                      | **Clustered Index**                            | **Non-Clustered Index**                                                     |
@@ -53,3 +53,14 @@ The data is stored in one place and the Index in another place. Index will have 
 - In the Indexes they are organized in ASC / DESC order of the Index Key, which doesn't in any way influence the storage of data in the Table.
 
 ![](assets/NonClusteredIndexRepresentation.png)
+
+## Unique and Non Unique Index
+- Unique Index is used to enforce Uniqueness of key values in the Index.
+- __Uniqueness is a Property of an Index__, and both clustered and non clustered Indexes can be Unique.
+- By Default, Primary Key Constraint, creates a Unique Clustered Index.
+- By Default, Unique Constraint , creates a Unique Non Clustered Index.
+- __There are no Major differences between  unique constraint and unique Index. In fact, when you add a unique constraint, a unique index gets created behind the scenes.__
+
+```
+Create Unique NonClustered Index UIX_TABLENAME_FIRST_LASTNAME on EMPLOYEE(FirstName, LastName) 
+```
