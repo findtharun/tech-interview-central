@@ -38,7 +38,8 @@ Best Explanation : https://www.youtube.com/watch?v=NGslt99VOCw (Kud Venkat YT)
 
 ### Clustered
 
-A Clustered Index determines the physical order of data in a table. (Basically they sort the data). **A Table can only have one Clustered Index, However that Index can be a composite Index**.
+- A Clustered Index determines the physical order of data in a table. (Basically they sort the data in Ascending Order by default, but we can created Desc as well). 
+- **A Table can only have one Clustered Index, However that Index can be a composite Index**.
 
 ```
 Composite Clustered Index
