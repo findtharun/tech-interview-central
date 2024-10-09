@@ -21,6 +21,8 @@ Types of Index
 
 How Ever, Clustered, Non Clustered and Unqiue are mostly used.
 
+![](assets/IndexTypes.jpeg)
+
 ## Clustered and Non Clustered Index
 Best Explanation : https://www.youtube.com/watch?v=NGslt99VOCw (Kud Venkat YT)
 1. Non Clustered ( Similar to index Page on a Book),
